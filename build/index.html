@@ -1,49 +1,47 @@
-<!doctype html>
-<html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
+<html class="" lang="en" data-arp-injected="true"><head>
+    <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Encrypt/Decrypt</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"></script>
     <script type="text/javascript" src="build/bundle.js"></script>
-  </head>
+  <meta class="foundation-mq"></head>
   <body>
     <div class="grid-container">
-      <div class="grid-x" style="margin-top: 50px;">
+      <div class="grid-x">
         <div class="cell small-8 small-offset-2">
-          <h1>Encrypt or decrypt a Message</h1>
+          
           <div id="error-message-password" class="callout alert hide">Password must be a minimum of 16 characters</div>
           <form id="encryptForm">
-            <label for="key" style="margin-top: 50px;"><h4>🗝 Enter the encryption password (minimum 16 characters):</h4></label>
-            <input type="text" name="key" id="key" />
+            <label for="key" style="margin-top: 9px;"><h4>🗝 Enter the encryption password (minimum 16 characters):</h4></label>
+            <input type="text" name="key" id="key">
 
-            <ul class="tabs" data-tabs id="options-tabs" style="margin-top: 50px;">
-              <li class="tabs-title is-active">
-                <a href="#encryptTab" aria-selected="true">Encrypt</a>
+            <ul class="tabs" data-tabs="" id="options-tabs" style="margin-top: 9px;" role="tablist" data-e="07is7a-e">
+              <li class="tabs-title is-active" role="presentation">
+                <a href="#encryptTab" aria-selected="true" role="tab" aria-controls="encryptTab" id="encryptTab-label" tabindex="0">Encrypt</a>
               </li>
-              <li class="tabs-title">
-                <a href="#decryptTab">Decrypt</a>
+              <li class="tabs-title" role="presentation">
+                <a href="#decryptTab" role="tab" aria-controls="decryptTab" aria-selected="false" id="decryptTab-label" tabindex="-1">Decrypt</a>
               </li>
             </ul>
             <div class="tabs-content" data-tabs-content="options-tabs">
-              <div class="tabs-panel is-active" id="encryptTab">
+              <div class="tabs-panel is-active" id="encryptTab" role="tabpanel" aria-labelledby="encryptTab-label">
                 <label for="encrypt">Encrypt the following:</label>
                 <textarea name="encrypt" id="encrypt" rows="8"></textarea>
-                <input type="submit" class="button" value="Encrypt" />
+                <input type="submit" class="button" value="Encrypt">
 
                 <label for="encrypted">Result:</label>
                 <textarea id="encrypted" rows="8"></textarea>
               </div>
-              <div class="tabs-panel" id="decryptTab">
+              <div class="tabs-panel" id="decryptTab" role="tabpanel" aria-labelledby="decryptTab-label" aria-hidden="true">
                 <label for="decrypt">Decrypt the following:</label>
                 <textarea name="decrypt" id="decrypt" rows="8"></textarea>
-                <input type="submit" class="button" value="Decrypt" />
+                <input type="submit" class="button" value="Decrypt">
 
                 <label for="decrypted">Result:</label>
                 <textarea id="decrypted" rows="8"></textarea>
@@ -55,5 +53,6 @@
     </div> <!-- /.container -->
 
     <script type="text/javascript">$(document).foundation();</script>
-  </body>
-</html>
+  
+
+</body></html>
